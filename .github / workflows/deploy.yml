@@ -38,17 +38,8 @@ jobs:
 
  
 
-      - name: Install dependencies
-
-        run: npm install
-
- 
-
-      - name: Build and deploy
-
-        run: |
-
-          npm run build  # Adjust the build command as needed
-       - name: Deploy app
-         run: node app.js
+      - steps:
+        run : node --version
+        run: npm install  
+        run: node app.js
           # Deploy your app here (e.g., to a hosting service)
