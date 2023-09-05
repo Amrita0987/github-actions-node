@@ -49,5 +49,6 @@ jobs:
         run: |
 
           npm run build  # Adjust the build command as needed
-
+       - name: Deploy app
+         run: node app.js
           # Deploy your app here (e.g., to a hosting service)
